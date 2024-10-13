@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 7, 49);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(15, 15, 71);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            /* text-decoration: none; */
+            color: rgb(165, 165, 255);
+            font-size: 1.09rem;
+        }
+
+        .projects-container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .projects-container h1 {
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background-color: rgb(15, 15, 71);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            color: rgb(172, 67, 225);
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        .skill{
+            color: rgb(203, 65, 65);
+        }
+
+        .project-card{
+            align-content: center;
+            /* text-align: justify; */
+            /* margin-left: 100px; */
+        }
+        .ptoject-card div {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Aman's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="projects-container">
+            <h1>My Projects</h1>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h2>Project 1: Social Media Phishing detection</h2>
+                <p>TThe Social Media Phishing Detection project aims to develop an advanced system to identify and mitigate phishing attacks on popular social media platforms. Leveraging machine learning and data analytics, the project collects and preprocesses social media data, extracts informative features, and train model.</p>
+                <p class="skill"> <b>Skills used- Data analytics, Supervised Machine learing, Python.</b></p>
+                <a href="https://github.com/amanr3207/social_media_phishing_detection" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h2>Project 2: Lost and found responsive website</h2>
+                <p>A one-stop website at university level which allows university students and staffs to report lost and found items within the campus.
+
+                </p>
+
+                <p class="skill">
+                    <b>Skills used- HTML, CSS, node js, React js</b>
+                </p>
+                <a href="https://amanr3207.github.io/Lost-and-Found-responsive-website/" target="_blank">Live Demo</a>
+            </div>
+
+            <!-- Add more projects as needed -->
+
+            <div class="project-card">
+                <h2>Project 3: NFT generator</h2>
+                <p>This is a code related to nft creation using JS . It has the following Functionality. Has the ability to "mint" NFTs and store them You should "mint" at least three NFT's Has the ability to print the details of your NFTs to the console Has the ability to print the total supply of your NFT collection to the console
+                </p>
+
+                <p class="skill">
+                    <b>Skills used- JavaScript</b>
+                </p>
+                <a href="https://github.com/amanr3207/JsProof" target="_blank">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h2>Project 4: ETH Token generator</h2>
+                <p>We will be able to generate token using solidity.
+<br>
+                    Fetures:-- 
+                    <br>
+                    1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply) 
+                    <br>
+                    2. Your contract will have a mapping of addresses to balances (address => uint) 
+                    <br>
+                    3. You will have a mint function that takes two parameters: an address and a value. The function then increases the total supply by that number and increases the balance of the i“sender” address by that amount 
+                    <br>
+                    4. Your contract will have a burn function, which works the opposite of the mint function, as it will destroy tokens. It will take an address and value just like the mint functions. It will then deduct the value from the total supply and from the balance of the “sender”. 
+                    <br>
+                    5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal to the amount that is supposed to be burned.
+                </p>
+
+                <p class="skill">
+                    <b>Skills used- BlockChain, solidity, javaScript</b>
+                </p>
+                <a href="https://github.com/amanr3207/JsProof" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

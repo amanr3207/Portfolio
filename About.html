@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+
+        *{
+            /* background-color: rgb(3, 3, 84); */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 7, 49);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(15, 15, 71);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            /* text-decoration: none; */
+            color: rgb(165, 165, 255);
+            font-size: 1.09rem;
+        }
+
+        .heading{
+            margin: 20px;
+            text-align: center;
+            color: rgb(46, 189, 189);
+        }
+
+        .content{
+            color: azure;
+            font-size: 20px;
+            text-align: justify;
+            margin: 80px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        .hr{
+           background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Aman's Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="About.html">About</a></li>
+
+                    <li><a href="Projects.html">Projects</a></li>
+
+                    <li><a href="Resume.html">Resume</a></li>
+
+                    <li><a href="Contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="heading">
+          <h1> About me </h1> 
+        </div>
+        <div class="content">
+            👨‍💻 Hey there, I'm Aman Raj, a passionate explorer in the realm of technology currently pursuing my BE in
+            Computer Science (Info Security) at Chandigarh University. 💻 Frontend wizard by day, Backend enthusiast by
+            night, and an aspiring Security Analyst (cyber security) in between, I thrive on the dynamic interplay of code and security.
+            🛡️ From crafting captivating frontend experiences to delving into the intricacies of ethical hacking, my
+            journey is an amalgamation of creativity and cybersecurity. 💼 Excited to showcase my array of projects,
+            housed both on GitHub and LinkedIn, offering a glimpse into my journey through lines of code and pixels. 🔍
+            Looking ahead, I'm eager to channel my skills into a dynamic company, shaping the future of technology while
+            constantly pushing the boundaries of innovation. Let's connect and embark on this tech adventure together!
+        </div>
+
+        <hr>
+    </main>
+
+</body>
+
+</html>
